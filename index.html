@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista Telefonica</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section>
+      <div>
+        <div>
+          <h2>Lista telefonica ( <span id="numContatos"></span> )</h2>
+          <hr/>
+          <div>
+            <button onclick="addContato()">
+              Novo Contato
+            </button>
+            <button onclick="ordenarLista()">
+              Ordenar
+            </button>
+            <a href="login.html">Voltar</a>
+          </div>
+          <hr/>
+          <div id="tarefas">
+            <ul>
+                <li>
+                <button onclick="deletar('identificador')">Deletar</button>
+                <button onclick="atualizar('identificador')">Atualizar</button>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="eventos.js"></script>
+  </body>
+</html>
